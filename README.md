@@ -35,7 +35,7 @@ No delays. No middlemen. Raw on-chain data, served fast.
 
 | Service | URL | Description |
 |---|---|---|
-| Trading App | [app.swanfi.pro](https://app.swanfi.pro) | Real-time token discovery & trading interface |
+| Trading App | [swanfi.pro](https://swanfi.pro) | Real-time token discovery & trading interface |
 | REST API | [api.swanfi.pro](https://api.swanfi.pro) | Public & private data endpoints |
 | WebSocket | [ws.swanfi.pro](https://ws.swanfi.pro) | Live price, trade & token feeds |
 

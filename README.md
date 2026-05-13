@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://pbs.twimg.com/profile_images/2050882410242596864/pEYVkW_b_400x400.jpg" alt="SwanFi Labs" width="88" style="border-radius: 16px;" />
+<img src="https://pbs.twimg.com/profile_images/2052996474498371584/n1DvDIpN_400x400.jpg" alt="SwanFi Labs" width="88" style="border-radius: 16px;" />
 
 <br />
 <br />

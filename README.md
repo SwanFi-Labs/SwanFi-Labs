@@ -1,69 +1,108 @@
 <div align="center">
-  <img src="https://pbs.twimg.com/profile_images/2050882410242596864/pEYVkW_b_400x400.jpg" alt="SwanFi Labs" width="80" />
-  
-  <h1>SwanFi Labs</h1>
-  
-  <p><strong>Real-time BSC token discovery & trading infrastructure</strong></p>
 
-  <p>
-    <a href="https://swanfi.pro">
-      <img src="https://img.shields.io/badge/Platform-Live-brightgreen?style=for-the-badge" />
-    </a>
-    <a href="https://api.swanfi.pro/health">
-      <img src="https://img.shields.io/badge/API-v1.0-blue?style=for-the-badge" />
-    </a>
-    <a href="https://t.me/swanfiAnn">
-      <img src="https://img.shields.io/badge/Telegram-Community-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
-    </a>
-    <a href="https://x.com/swanfipro">
-      <img src="https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white" />
-    </a>
-  </p>
+<img src="https://pbs.twimg.com/profile_images/2050882410242596864/pEYVkW_b_400x400.jpg" alt="SwanFi Labs" width="88" style="border-radius: 16px;" />
+
+<br />
+<br />
+
+# SwanFi Labs
+
+**Real-time BSC token discovery & trading infrastructure**
+
+<p>
+  <a href="https://swanfi.pro">
+    <img src="https://img.shields.io/badge/Platform-Live-22c55e?style=for-the-badge&labelColor=09090b" />
+  </a>
+  &nbsp;
+  <a href="https://api.swanfi.pro/health">
+    <img src="https://img.shields.io/badge/API-v1.0-3b82f6?style=for-the-badge&labelColor=09090b" />
+  </a>
+  &nbsp;
+  <a href="https://t.me/swanfiAnn">
+    <img src="https://img.shields.io/badge/Telegram-Community-26A5E4?style=for-the-badge&logo=telegram&logoColor=white&labelColor=09090b" />
+  </a>
+  &nbsp;
+  <a href="https://x.com/swanfipro">
+    <img src="https://img.shields.io/badge/X_(Twitter)-Follow-ffffff?style=for-the-badge&logo=x&logoColor=white&labelColor=09090b" />
+  </a>
+</p>
+
+<br />
+
+> **Index every token launch. Track every transaction. Stream it all — in real time.**
+
 </div>
 
 ---
 
-## What is SwanFi?
+## Overview
 
-SwanFi is a high-performance, real-time token discovery and analytics platform built for the BNB Smart Chain ecosystem. We index every token launch, track bonding curve progression, monitor whale movements, and deliver live on-chain data to traders — milliseconds after it happens on-chain.
+SwanFi is a **high-performance on-chain data platform** built for the BNB Smart Chain ecosystem. We provide developers and traders with the infrastructure to discover, analyze, and act on BSC token data the moment it hits the chain.
 
-No delays. No middlemen. Raw on-chain data, served fast.
+Our platform covers the full token lifecycle — from launch on Flap.sh and Four.meme, through bonding curve progression, to migration on PancakeSwap — and surfaces everything through a clean, versioned developer API and live WebSocket feeds.
+
+```
+New Token Launch → Indexing → Analytics → REST API / WebSocket → Your App
+```
+
+No polling. No stale data. No abstraction layers between you and the chain.
 
 ---
 
 ## Platform Services
 
-| Service | URL | Description |
+| Service | Endpoint | Description |
 |---|---|---|
-| Trading App | [swanfi.pro](https://swanfi.pro) | Real-time token discovery & trading interface |
-| REST API | [api.swanfi.pro](https://api.swanfi.pro) | Public & private data endpoints |
-| WebSocket | [ws.swanfi.pro](https://ws.swanfi.pro) | Live price, trade & token feeds |
+| **Trading App** | [swanfi.pro](https://swanfi.pro) | Real-time token discovery & trading interface |
+| **REST API** | [api.swanfi.pro](https://api.swanfi.pro) | Versioned data endpoints for developers |
+| **WebSocket** | [ws.swanfi.pro](https://ws.swanfi.pro) | Live price, trade & token event feeds |
 
 ---
 
-## Core Features
+## Core Capabilities
 
-**Token Discovery**
-- Real-time detection of new token launches across Flap.sh and Four.meme
-- Live bonding curve progress with target tracking
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**🔍 Token Discovery**
+- Real-time detection of new launches on Flap.sh and Four.meme
+- Live bonding curve progress with USD target tracking
 - Instant migration detection to PancakeSwap DEX
+- Token metadata, supply, and pricing from block zero
 
-**On-Chain Analytics**
-- Transaction history with buy/sell classification
-- Holder tracking with balance, PnL, and paperhand detection
-- Developer activity monitoring (dev buy, dev sell, dev hold)
-- Top trader leaderboard with realized PnL
+</td>
+<td width="50%" valign="top">
 
-**Data Infrastructure**
-- Multi-provider BSC RPC with latency-aware routing and circuit breaker
-- WebSocket pub/sub broker with per-channel subscriptions
-- OHLCV candle system (1s to 1d timeframes) with real-time aggregation
-- PostgreSQL with optimized indexing for high-frequency writes
+**📊 On-Chain Analytics**
+- Full transaction history with BUY/SELL classification
+- Holder tracking: balance, PnL, paperhand detection
+- Developer activity monitoring across the full lifecycle
+- Top trader leaderboard with realized and unrealized PnL
 
-**API Access**
-- Public API with per-key rate limiting (60 req/min)
-- Private API for platform-internal use
-- Versioned endpoints (`/v1/`) for stability guarantees
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**⚡ Real-Time Feeds**
+- Sub-second WebSocket event delivery
+- Per-token subscription channels
+- OHLCV candles from 1s to 1d, aggregated live
+- Whale movement and holder change alerts
+
+</td>
+<td width="50%" valign="top">
+
+**🛠 Developer Infrastructure**
+- Versioned REST API with stability guarantees
+- API key auth with per-key rate limiting and usage analytics
+- Consistent response schemas across all endpoints
+- Built for high-frequency trading app integrations
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -77,70 +116,203 @@ No delays. No middlemen. Raw on-chain data, served fast.
   <img src="https://img.shields.io/badge/BNB_Chain-F0B90B?style=flat-square&logo=binance&logoColor=black" />
   <img src="https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=socket.io&logoColor=white" />
   <img src="https://img.shields.io/badge/ethers.js-2535A0?style=flat-square&logo=ethereum&logoColor=white" />
-  <img src="https://img.shields.io/badge/Neon-00E699?style=flat-square&logo=postgresql&logoColor=black" />
+  <img src="https://img.shields.io/badge/Neon_DB-00E699?style=flat-square&logo=postgresql&logoColor=black" />
 </p>
 
 ---
 
-## API Reference
-
-SwanFi provides a public REST API for developers building on top of BSC token data.
+## REST API Reference
 
 **Base URL:** `https://api.swanfi.pro/v1`
 
-**Authentication:** All requests require an API key via `x-api-key` header.
+All requests require an API key passed via the `x-api-key` header. Keys are rate-limited to **60 requests/minute** by default.
 
 ```http
-GET /v1/tokens/latest
-GET /v1/tokens/migrating
-GET /v1/tokens/:address/trades
+x-api-key: swfi_your_api_key_here
 ```
 
-**Query Parameters:**
+---
 
-| Endpoint | Parameter | Values | Default |
-|---|---|---|---|
-| `/v1/tokens/latest` | `source` | `four_meme`, `flap` | all |
-| `/v1/tokens/latest` | `sort` | `newest`, `oldest`, `marketcap`, `volume` | `newest` |
-| `/v1/tokens/latest` | `limit` | `1–100` | `50` |
-| `/v1/tokens/migrating` | `source` | `four_meme`, `flap` | all |
-| `/v1/tokens/migrating` | `sort` | `newest`, `marketcap`, `volume` | `marketcap` |
-| `/v1/tokens/:address/trades` | `wallet` | `0x...` | all wallets |
-| `/v1/tokens/:address/trades` | `position` | `BUY`, `SELL` | all |
-| `/v1/tokens/:address/trades` | `from` | unix timestamp | — |
-| `/v1/tokens/:address/trades` | `to` | unix timestamp | — |
-| `/v1/tokens/:address/trades` | `limit` | `1–200` | `50` |
+### `GET /v1/tokens`
 
-**Rate limit:** 60 requests / minute per key
+Returns the latest token launches across supported launchpads. Supports filtering by source, sorting, and pagination.
 
-**Example Request:**
+**Query Parameters**
+
+| Parameter | Type | Values | Default | Description |
+|---|---|---|---|---|
+| `source` | string | `flap`, `four_meme` | all | Filter by launchpad origin |
+| `sort` | string | `newest`, `oldest`, `marketcap`, `volume` | `newest` | Sort order |
+| `limit` | integer | `1 – 100` | `50` | Number of results |
+| `offset` | integer | `0+` | `0` | Pagination offset |
+
+**Example — cURL**
 
 ```bash
-curl -H "x-api-key: YOUR_API_KEY" \
-  "https://api.swanfi.pro/v1/tokens/latest?source=flap&sort=marketcap&limit=20"
+curl -H "x-api-key: swfi_your_key" \
+  "https://api.swanfi.pro/v1/tokens?source=flap&sort=marketcap&limit=20"
 ```
 
-**Example Response:**
+**Example — JavaScript**
+
+```js
+const res = await fetch("https://api.swanfi.pro/v1/tokens?source=four_meme&sort=newest&limit=10", {
+  headers: { "x-api-key": "swfi_your_key" }
+});
+const tokens = await res.json();
+```
+
+**Example — Python**
+
+```python
+import requests
+
+r = requests.get(
+    "https://api.swanfi.pro/v1/tokens",
+    params={"source": "flap", "sort": "marketcap", "limit": 20},
+    headers={"x-api-key": "swfi_your_key"}
+)
+tokens = r.json()
+```
+
+**Response**
 
 ```json
 [
   {
-    "tokenAddress": "0x...",
-    "name": "Token Name",
-    "symbol": "TKN",
+    "tokenAddress": "0xabc123...def456",
+    "name": "PepeFlight",
+    "symbol": "PFLT",
     "sourceFrom": "flap",
     "basePair": "BNB",
-    "launchTime": "2026-05-04T10:00:00.000Z",
-    "priceUsdt": 0.0000035,
-    "marketCap": 3500,
-    "volume24h": 1200,
-    "txCount": 48,
-    "holderCount": 12
+    "launchTime": "2026-05-13T08:00:00.000Z",
+    "priceUsdt": 0.0000038,
+    "marketCap": 3800,
+    "volume24h": 1500,
+    "txCount": 52,
+    "holderCount": 15,
+    "mode": "bonding",
+    "progress": 12.5,
+    "targetUSD": 10000
   }
 ]
 ```
 
-> To request API access, reach out via [Telegram](https://t.me/swanfiAnn) or [X](https://x.com/swanfipro)
+---
+
+### `GET /v1/transactions`
+
+Returns buy/sell transaction history across all tokens or filtered to a specific token. Ideal for whale tracking, activity feeds, and trade analytics.
+
+**Query Parameters**
+
+| Parameter | Type | Values | Default | Description |
+|---|---|---|---|---|
+| `token` | string | `0x...` | — | Filter by token address |
+| `wallet` | string | `0x...` | all | Filter by wallet address |
+| `position` | string | `BUY`, `SELL` | all | Transaction direction |
+| `from` | integer | unix timestamp | — | Start of time range |
+| `to` | integer | unix timestamp | — | End of time range |
+| `limit` | integer | `1 – 200` | `50` | Number of results |
+
+**Example — cURL**
+
+```bash
+curl -H "x-api-key: swfi_your_key" \
+  "https://api.swanfi.pro/v1/transactions?token=0xabc123&position=BUY&limit=50"
+```
+
+**Example — JavaScript**
+
+```js
+const res = await fetch("https://api.swanfi.pro/v1/transactions?token=0xabc123&position=BUY", {
+  headers: { "x-api-key": "swfi_your_key" }
+});
+const txs = await res.json();
+```
+
+**Response**
+
+```json
+[
+  {
+    "txHash": "0xdeadbeef...1234",
+    "tokenAddress": "0xabc123...def456",
+    "walletAddress": "0xuser...wallet",
+    "position": "BUY",
+    "amountBNB": 0.5,
+    "amountToken": 1312500,
+    "priceUsdt": 0.0000038,
+    "valueUsdt": 190.0,
+    "timestamp": "2026-05-13T08:04:22.000Z",
+    "isWhale": false,
+    "isDev": false
+  }
+]
+```
+
+---
+
+### `GET /v1/wallets/:address/tracker`
+
+Returns a complete on-chain portfolio snapshot for any wallet. Includes realized PnL, unrealized PnL, current token positions, and historical trade activity.
+
+**Path Parameters**
+
+| Parameter | Description |
+|---|---|
+| `:address` | Wallet address (`0x...`) |
+
+**Query Parameters**
+
+| Parameter | Type | Values | Default | Description |
+|---|---|---|---|---|
+| `limit` | integer | `1 – 100` | `50` | Number of positions to return |
+
+**Example — cURL**
+
+```bash
+curl -H "x-api-key: swfi_your_key" \
+  "https://api.swanfi.pro/v1/wallets/0xuser...wallet/tracker"
+```
+
+**Example — Python**
+
+```python
+import requests
+
+address = "0xuser...wallet"
+r = requests.get(
+    f"https://api.swanfi.pro/v1/wallets/{address}/tracker",
+    headers={"x-api-key": "swfi_your_key"}
+)
+tracker = r.json()
+```
+
+**Response**
+
+```json
+{
+  "walletAddress": "0xuser...wallet",
+  "totalRealizedPnlUsdt": 412.50,
+  "totalUnrealizedPnlUsdt": -38.00,
+  "totalValueUsdt": 890.00,
+  "tradeCount": 134,
+  "winRate": 0.61,
+  "positions": [
+    {
+      "tokenAddress": "0xabc123...def456",
+      "symbol": "PFLT",
+      "balance": 1312500,
+      "avgBuyPriceUsdt": 0.0000032,
+      "currentPriceUsdt": 0.0000038,
+      "unrealizedPnlUsdt": 7.87,
+      "unrealizedPnlPercent": 18.75,
+      "totalInvestedUsdt": 42.00
+    }
+  ]
+}
+```
 
 ---
 
@@ -148,36 +320,62 @@ curl -H "x-api-key: YOUR_API_KEY" \
 
 **Endpoint:** `wss://ws.swanfi.pro/ws`
 
-**Protocol:** JSON over WebSocket
+SwanFi's WebSocket server delivers real-time on-chain events using a lightweight JSON pub/sub protocol. Subscribe to any channel on connection — events stream instantly as they are confirmed on-chain.
 
-**Subscribe to a channel:**
+### Subscribing
 
 ```json
 { "action": "subscribe", "channel": "new_token" }
 ```
 
-**Available Channels:**
+```json
+{ "action": "unsubscribe", "channel": "new_token" }
+```
+
+### Available Channels
 
 | Channel | Description |
 |---|---|
-| `new_token` | New token launch events |
-| `token_update` | Price, marketcap, volume updates |
-| `migrate` | Token migration to DEX events |
-| `transaction:all` | All buy/sell transactions |
-| `transaction:{address}` | Transactions for a specific token |
-| `price:{address}` | Price updates for a specific token |
-| `candle:{address}` | OHLCV candle updates (1s to 1d) |
-| `holder:{address}` | Holder balance changes |
+| `new_token` | New token launch detected on Flap.sh or Four.meme |
+| `token_update` | Price, market cap, volume, and holder count updates |
+| `migrate` | Token migration from bonding curve to PancakeSwap DEX |
+| `transaction:all` | All buy/sell events across all tokens |
+| `transaction:{address}` | Buy/sell events for a specific token |
+| `price:{address}` | Real-time price ticks for a specific token |
+| `candle:{address}` | OHLCV candle updates (1s to 1d) for a specific token |
+| `holder:{address}` | Holder balance changes for a specific token |
 
-**Example Message:**
+---
+
+### Event Payloads
+
+**`new_token`**
+
+```json
+{
+  "channel": "new_token",
+  "data": {
+    "tokenAddress": "0xabc123...def456",
+    "name": "PepeFlight",
+    "symbol": "PFLT",
+    "sourceFrom": "flap",
+    "basePair": "BNB",
+    "launchTime": "2026-05-13T08:00:00.000Z",
+    "deployer": "0xdev...wallet"
+  },
+  "ts": 1747123200000
+}
+```
+
+**`token_update`**
 
 ```json
 {
   "channel": "token_update",
   "data": {
-    "tokenAddress": "0x...",
-    "price": 0.0000038,
-    "marketcap": 3800,
+    "tokenAddress": "0xabc123...def456",
+    "priceUsdt": 0.0000038,
+    "marketCap": 3800,
     "volume24h": 1500,
     "txCount": 52,
     "holderCount": 15,
@@ -185,96 +383,226 @@ curl -H "x-api-key: YOUR_API_KEY" \
     "progress": 12.5,
     "targetUSD": 10000
   },
-  "ts": 1714000000000
+  "ts": 1747123260000
+}
+```
+
+**`transaction:{address}`**
+
+```json
+{
+  "channel": "transaction:0xabc123...def456",
+  "data": {
+    "txHash": "0xdeadbeef...1234",
+    "walletAddress": "0xuser...wallet",
+    "position": "BUY",
+    "amountBNB": 0.5,
+    "amountToken": 1312500,
+    "priceUsdt": 0.0000038,
+    "valueUsdt": 190.0,
+    "timestamp": "2026-05-13T08:04:22.000Z"
+  },
+  "ts": 1747123462000
+}
+```
+
+**`candle:{address}`**
+
+```json
+{
+  "channel": "candle:0xabc123...def456",
+  "data": {
+    "timeframe": "1m",
+    "open": 0.0000034,
+    "high": 0.0000041,
+    "low": 0.0000033,
+    "close": 0.0000038,
+    "volume": 420.5,
+    "time": 1747123200
+  },
+  "ts": 1747123260000
+}
+```
+
+**`migrate`**
+
+```json
+{
+  "channel": "migrate",
+  "data": {
+    "tokenAddress": "0xabc123...def456",
+    "symbol": "PFLT",
+    "sourceFrom": "flap",
+    "pancakePair": "0xpair...address",
+    "finalMarketCap": 10200,
+    "migratedAt": "2026-05-13T09:15:00.000Z"
+  },
+  "ts": 1747127700000
 }
 ```
 
 ---
 
-## System Architecture
+### Full Connection Example
+
+```js
+const ws = new WebSocket("wss://ws.swanfi.pro/ws");
+
+ws.onopen = () => {
+  // Subscribe to global token launches
+  ws.send(JSON.stringify({ action: "subscribe", channel: "new_token" }));
+
+  // Subscribe to a specific token's transactions
+  ws.send(JSON.stringify({ action: "subscribe", channel: "transaction:0xabc123...def456" }));
+};
+
+ws.onmessage = (event) => {
+  const msg = JSON.parse(event.data);
+  console.log(`[${msg.channel}]`, msg.data);
+};
+
+ws.onerror = (err) => console.error("WebSocket error:", err);
+ws.onclose = () => console.log("Disconnected");
+```
+
+---
+
+## API Key Dashboard
+
+Every SwanFi API key comes with built-in usage analytics and quota monitoring, accessible via the developer dashboard at [swanfi.pro](https://swanfi.pro).
+
+**What you get:**
+- Daily and monthly usage counters per key
+- Real-time quota tracking with overage protection
+- Request logs with endpoint-level breakdown
+- Key expiration management and rotation support
+- Configurable rate limit tiers for high-volume applications
+
+**Usage Stats Endpoint**
+
+```bash
+curl -H "x-api-key: swfi_your_key" \
+  "https://api.swanfi.pro/v1/keys/me/usage"
+```
+
+```json
+{
+  "keyId": "key_abc123",
+  "plan": "developer",
+  "usageToday": 1240,
+  "dailyQuota": 10000,
+  "usagePercent": 12.4,
+  "remainingQuota": 8760,
+  "rateLimitPerMinute": 60,
+  "resetsAt": "2026-05-14T00:00:00.000Z"
+}
+```
+
+---
+
+## Infrastructure
+
+SwanFi is built from the ground up for **low-latency, high-frequency** on-chain data workloads.
 
 ```
-BSC Mainnet
-    │
-    ├── WebSocket Block Listener
-    │       │
-    │       ├── Flap.sh Handler        → new tokens, buys, sells
-    │       ├── Four.meme Handler      → new tokens, buys, sells
-    │       └── PancakeSwap Handler    → post-migrate swaps
-    │               │
-    │               ├── transaction.repository  → PostgreSQL
-    │               ├── candleBuilder           → token_candles (1s–1d)
-    │               ├── bonding.service         → liquidity state
-    │               └── wsbroker               → WebSocket clients
-    │
-    ├── WS Server    → ws.swanfi.pro
-    │       └── Pub/Sub broker
-    │               ├── new_token
-    │               ├── token_update
-    │               ├── transaction:{address}
-    │               ├── candle:{address}
-    │               └── migrate
-    │
-    └── REST API     → api.swanfi.pro
-            ├── /tokens/*          (private)
-            ├── /wallets/*         (private)
-            ├── /platform/*        (private)
-            └── /v1/*              (public, rate-limited)
+BSC Mainnet (Full Node)
+        │
+        ├── Block Listener (WebSocket RPC)
+        │       │
+        │       ├── Flap.sh Event Handler       → new tokens, swaps, burns
+        │       ├── Four.meme Event Handler      → new tokens, swaps, migrations
+        │       └── PancakeSwap V2/V3 Handler    → post-migration DEX swaps
+        │               │
+        │               ├── Transaction Indexer   → PostgreSQL (Neon)
+        │               ├── Candle Aggregator     → OHLCV (1s–1d, real-time)
+        │               ├── Bonding Curve Tracker → progress, mode, target
+        │               ├── Holder Multicall      → balance snapshots (60s)
+        │               └── WebSocket Broker      → per-channel pub/sub
+        │
+        ├── WebSocket Server   wss://ws.swanfi.pro
+        │       └── Pub/Sub Broker
+        │               ├── new_token
+        │               ├── token_update
+        │               ├── migrate
+        │               ├── transaction:{address}
+        │               ├── candle:{address}
+        │               ├── price:{address}
+        │               └── holder:{address}
+        │
+        └── REST API Server    https://api.swanfi.pro
+                └── /v1/*   (public, rate-limited, versioned)
 ```
+
+**Key infrastructure properties:**
+
+- **Fastify** backend — benchmarked for ultra-low overhead HTTP handling
+- **WebSocket pub/sub broker** with per-channel subscriptions and connection pooling
+- **Multi-provider BSC RPC** with latency-aware routing and automatic failover
+- **Multicall-based holder indexing** — batch balance queries per block
+- **Real-time OHLCV aggregation** — candles built tick-by-tick, not from snapshots
+- **Bonding curve engine** — atomic progress updates per transaction confirmation
+- **Neon PostgreSQL** — optimized schema with composite indexes for high-frequency writes
 
 ---
 
 ## Supported Launchpads
 
-| Platform | Status | Chain |
-|---|---|---|
-| [Flap.sh](https://flap.sh) | ✅ Live | BNB Chain |
-| [Four.meme](https://four.meme) | ✅ Live | BNB Chain |
-| PancakeSwap V2/V3 (post-migrate) | ✅ Live | BNB Chain |
+| Platform | Status | Chain | Scope |
+|---|---|---|---|
+| [Flap.sh](https://flap.sh) | ✅ Live | BNB Chain | Launch, bonding, migrate |
+| [Four.meme](https://four.meme) | ✅ Live | BNB Chain | Launch, bonding, migrate |
+| PancakeSwap V2 / V3 | ✅ Live | BNB Chain | Post-migration DEX swaps |
 
 ---
 
 ## Data Coverage
 
-| Metric | Coverage |
+| Data Type | Coverage |
 |---|---|
-| Token launches | Real-time, all Flap.sh & Four.meme |
+| Token launches | Real-time — all Flap.sh & Four.meme |
 | Transactions | Every on-chain BUY/SELL event |
-| Candle data | 1s, 15s, 30s, 1m, 5m, 15m, 30m, 1h, 4h, 1d |
+| Candle timeframes | 1s · 15s · 30s · 1m · 5m · 15m · 30m · 1h · 4h · 1d |
 | Holder snapshots | Updated every 60 seconds via multicall |
 | Bonding progress | Atomic real-time updates per transaction |
 | Migration events | Detected within 1 block of on-chain confirmation |
 
 ---
 
-## Get API Access
+## Security
 
-SwanFi API is currently in **private beta**. To request access:
+SwanFi API infrastructure is built with developer security as a first-class concern.
 
-1. Follow us on [X (@swanfipro)](https://x.com/swanfipro)
-2. Join our [Telegram](https://t.me/swanfiAnn)
-3. Send a message with your use case
-
-We review all requests and respond within 24 hours.
+- **SHA-256 hashed API keys** — raw keys are never stored; only secure digests
+- **Per-key rate limiting** — enforced at the gateway level, configurable per tier
+- **Request monitoring** — all API activity logged with endpoint-level granularity
+- **Abuse protection** — automated detection and blocking of malicious usage patterns
+- **CORS enforcement** — restricted to approved origins
+- **Read-only data platform** — no user funds, no signing, no custody
 
 ---
 
-## Security
+## Get API Access
 
-- All private endpoints protected by API key authentication
-- Rate limiting enforced per key (configurable per tier)
-- API keys stored securely with last-used tracking
-- CORS restricted to approved origins
-- No user funds handled — read-only data infrastructure
+SwanFi API is currently in **private beta**. We're onboarding developers building trading bots, analytics dashboards, portfolio trackers, and BSC data tooling.
+
+**To request access:**
+
+1. Follow [@swanfipro](https://x.com/swanfipro) on X
+2. Join the [Telegram community](https://t.me/swanfiAnn)
+3. Send a message describing your use case
+
+All requests are reviewed and responded to within **24 hours**.
 
 ---
 
 <div align="center">
-  <br/>
-  <p>
-    <a href="https://swanfi.pro">swanfi.pro</a> ·
-    <a href="https://t.me/swanfiAnn">Telegram</a> ·
-    <a href="https://x.com/swanfipro">X (Twitter)</a>
-  </p>
-  <p><sub>Built with precision for BSC traders · © 2026 SwanFi Labs</sub></p>
+
+<br />
+
+**[swanfi.pro](https://swanfi.pro)** · **[API Docs](https://api.swanfi.pro/v1)** · **[Telegram](https://t.me/swanfiAnn)** · **[X / Twitter](https://x.com/swanfipro)**
+
+<br />
+
+<sub>Built with precision for BSC traders &nbsp;·&nbsp; © 2026 SwanFi Labs</sub>
+
 </div>

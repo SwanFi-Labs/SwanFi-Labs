@@ -55,7 +55,7 @@ No polling. No stale data. No abstraction layers between you and the chain.
 |---|---|---|
 | **Trading App** | [swanfi.pro](https://swanfi.pro) | Real-time token discovery & trading interface |
 | **REST API** | [api.swanfi.pro](https://api.swanfi.pro) | Versioned data endpoints for developers |
-| **WebSocket** | [ws.swanfi.pro](https://ws.swanfi.pro) | Live price, trade & token event feeds |
+| **WebSocket** | [ws.swanfi.pro](wss://ws.swanfi.pro) | Live price, trade & token event feeds |
 
 ---
 
